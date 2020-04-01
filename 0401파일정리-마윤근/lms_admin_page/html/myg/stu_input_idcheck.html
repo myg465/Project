@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript" src="../../js/myg/custom_stu_input.js"></script>
+		<script type="text/javascript">
+			function nick_check_db(){
+				//db와 연동후 아이디가 있는지 확인하는 형태
+				document.getElementById("ch_text").innerHTML="아이디 사용이 가능합니다.";
+				
+				
+			}
+			function join_datainput(){
+				opener.document.getElementById("stu_id").value=document.getElementById("ch_id").value;
+				window.close();
+			}
+		
+		</script>
+	</head>
+	<body>
+		<h1>아이디 중복체크</h1>
+		<form action="" name="form">
+			<label>아이디중복체크</label>
+			<input type="text" id="ch_id">
+			<input type="button" value="아이디 확인" onclick="nick_check()"><br>
+			<p>아이디는 영문 또는 숫자 조합(5~15자리)</p>
+			<p id="ch_text"></p>
+			<br>
+			<input type="button" value="메인으로 이동" onclick="join_datainput()">
+		</form>
+	</body>
+</html>

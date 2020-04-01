@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+section {
+	width: 1400px;
+	height: 800px;
+	margin: 0 auto;
+}
+
+section p {
+	display: block;
+	width: 1250px;
+	height: 25px;
+	border-bottom: 1px solid #efefef;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 30px;
+	box-sizing: border-box;
+}
+
+section p a {
+	display: block;
+	float: right;
+	background-color: #7b7b7b;
+	width: 22px;
+	height: 22px;
+	margin-left: 2px;
+	padding: 4px 0 0 4.3px;
+	box-sizing: border-box;
+}
+
+#notice_input_wrap {
+	width: 1000px;
+	height: 900px;
+	margin-top: 40px;
+}
+
+#notice_input_table {
+	width: 1000px;
+	height: 640px;
+	margin: 0 auto;
+	text-align: left;
+	border-top: 2px solid #606060;
+	border-bottom: 2px solid #606060;
+	border-collapse: collapse;
+	margin-top: 6px;
+	position: relative;
+	left: 170px;
+}
+
+;
+#notice_input_table tr {
+	border-bottom: 1px solid #efefef;
+}
+
+#notice_input_table th {
+	width: 180px;
+	height: 52px;
+	background-color: #f8f8f8;
+	font-size: 12px;
+	border-bottom: 1px solid #cecece;
+}
+
+.span_wrap {
+	width: 80px;
+	height: 30px;
+	position: relative;
+	left: 20px;
+	top: 10px;
+	margin: 0;
+	font-size: 13px;
+}
+
+.autono_wrap {
+	width: 80px;
+	height: 30px;
+	position: relative;
+	left: 20px;
+	margin: 0;
+	font-size: 13px;
+}
+
+.table_title {
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	background: url("../../img/myg/t_icon.png") no-repeat;
+	position: relative;
+	top: -3.6px;
+	left: -3px;
+}
+
+#notice_con_type {
+	width: 95px;
+	height: 25px;
+}
+
+#notice_content_title {
+	width: 840px;
+	height: 24px;
+}
+
+#notice_input_table td {
+	width: 870px;
+	height: 41px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	font-size: 13px;
+	border-bottom: 1px solid #cecece;
+}
+
+#notice_content_input {
+	width: 1020px;
+	height: 320px;
+	margin: 10px 0;
+}
+
+#autono_img {
+	width: 125px;
+	height: 39px;
+	position: relative;
+	top: 20px;
+}
+
+#autono_text {
+	width: 168px;
+	height: 24px;
+}
+
+#input_tail {
+	display: inline-block;
+	width: 862px;
+	height: 23px;
+	font-size: 13px;
+	position: relative;
+	left: 130px;
+}
+
+#view_button {
+	width: 1000px;
+	height: 25px;
+	margin-top: 10px;
+	font-size: 13px;
+	float: right;
+	position: relative;
+	left: 190px;
+	top: 20px;
+}
+
+#view_button button {
+	float: right;
+	background: #7e7e7e;
+	padding: 0 15px;
+	border: none;
+	margin-left: 4px;
+	height: 25px;
+	width: 60px;
+	cursor: pointer;
+	color: #fff;
+}
+
+#view_button button:nth-child(1) {
+	width: 80px;
+}
