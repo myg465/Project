@@ -17,7 +17,7 @@
 	 </ul>
   </div>
   <nav>
-	<a href="index.jsp"></a>
+	<a href="pre_index.jsp"></a>
 	<ul>
 		<li class="menu_list"><a href="plist.do">COOKIT메뉴</a></li>
 		<li class="menu_list"><a href="elist.do">이벤트</a></li>

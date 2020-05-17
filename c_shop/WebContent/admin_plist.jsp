@@ -36,12 +36,15 @@
 	          <th>
 		          <a href="pmodify_view.do?pId=${list.pId}&page=${page}">
 		          	[${list.pId }]
-		          </a>  <!-- 상세페이지 이동링크 -->
+		          </a>  <!-- 수정페이지 이동링크 -->
 	          </th>
 	          <td>
 	              <span>상품명 : ${list.pName}</span><br>  <!-- 상품이름 -->
 	              <span>가격 : ${list.pPrice} 원</span>  <!-- 가격 -->
 	              <span>등록일 : <fmt:formatDate value="${list.pDate }" type="date" dateStyle="short"/></span>  <!-- 등록일 -->
+	          </td>
+	          <td id="p_thumbnail">
+	          	  <img alt="${list.pName}" src="pupload/${list.pTitleimg }">
 	          </td>
 	        </tr>
          </c:forEach>
@@ -49,56 +52,58 @@
 	    
 	
 	    <!-- 하단버튼 -->
-	    <ul class="page-num">
-	    	<!-- 첫페이지 이동 -->
-	      		<a href="admin_plist.do?page=1">
-	      	<li class="first"></li>
-	      </a>
-	      <!-- 이전페이지 이동 -->
-	      <c:if test="${page<=1 }">
-	      	<li class="prev"></li>
-	      </c:if>
-	      
-	      <c:if test="${page>1 }">
-	      		<a href="admin_plist.do?page=${page-1 }">
-	      		<li class="prev"></li>
-	      	</a>
-	      </c:if>
-	      
-	      <!-- 순차적 페이지 번호 출력 -->
-	      <c:forEach var="a" begin="${startpage }" end="${endpage }" step="1">
-	      	<c:choose>
-				<c:when test="${a==page }">
-					<li class="num"  style="background: #dfdfdf ;">
-						  <div>${a }</div>
-					</li>
-				</c:when>
-				
-				<c:when test="${a!=page }">
-		      			<a href="admin_plist.do?page=${a }">
-						<li class="num">
+	    <div id="page-wrap">
+		    <ul class="page-num">
+		    	<!-- 첫페이지 이동 -->
+		      		<a href="admin_plist.do?page=1">
+		      	<li class="first"></li>
+		      </a>
+		      <!-- 이전페이지 이동 -->
+		      <c:if test="${page<=1 }">
+		      	<li class="prev"></li>
+		      </c:if>
+		      
+		      <c:if test="${page>1 }">
+		      		<a href="admin_plist.do?page=${page-1 }">
+		      		<li class="prev"></li>
+		      	</a>
+		      </c:if>
+		      
+		      <!-- 순차적 페이지 번호 출력 -->
+		      <c:forEach var="a" begin="${startpage }" end="${endpage }" step="1">
+		      	<c:choose>
+					<c:when test="${a==page }">
+						<li class="num"  style="background: #dfdfdf ;">
 							  <div>${a }</div>
-						 </li>
-					</a>
-				</c:when>
-			</c:choose>
-	      </c:forEach>
-	      
-	      <!-- 다음페이지 이동 -->
-	      <c:if test="${page>=maxpage }">
-	      	<li class="next"></li>
-	      </c:if>
-	      <c:if test="${page<maxpage }">
-	     	<a href="admin_pelist.do?page=${page+1 }">
-		    	<li class="next"></li>
-		    </a>
-	      </c:if>
-	      
-	      <!-- 마지막페이지 이동 -->
-	      <a href="admin_plist.do?page=${maxpage }">
-	    	  <li class="last"></li>
-	      </a>
-	    </ul>
+						</li>
+					</c:when>
+					
+					<c:when test="${a!=page }">
+			      			<a href="admin_plist.do?page=${a }">
+							<li class="num">
+								  <div>${a }</div>
+							 </li>
+						</a>
+					</c:when>
+				</c:choose>
+		      </c:forEach>
+		      
+		      <!-- 다음페이지 이동 -->
+		      <c:if test="${page>=maxpage }">
+		      	<li class="next"></li>
+		      </c:if>
+		      <c:if test="${page<maxpage }">
+		     	<a href="admin_pelist.do?page=${page+1 }">
+			    	<li class="next"></li>
+			    </a>
+		      </c:if>
+		      
+		      <!-- 마지막페이지 이동 -->
+		      <a href="admin_plist.do?page=${maxpage }">
+		    	  <li class="last"></li>
+		      </a>
+		    </ul>
+		</div>
 	    <a href="admin_pwrite_view.jsp">
 	      <div class="write">상품등록</div>
 	    </a>  

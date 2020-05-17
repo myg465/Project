@@ -222,12 +222,14 @@
 				</div>
 			</div>
 			<div id="main_notice">
-				<a href="list.do">
-					<dl>
-						<dt>공지사항</dt>
-						<dd>미리보는 쿡킷 전체 메뉴 (3月)</dd>
-					</dl>
-				</a>
+				<dl>
+					<dt>공지사항</dt>
+					<dd>
+						<a href="content_view.do?bId=${notice_list[0].bId}&page=1&rnum=${notice_list[0].rnum}&searchflag=1">
+							${notice_list[1].bTitle }
+						</a>
+					</dd>
+				</dl>
 			</div>	 		
 	 	</section>
 		<jsp:include page="common/footer.jsp" />

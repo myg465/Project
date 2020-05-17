@@ -17,9 +17,19 @@ h1 {
 
 #product_list tr{ height: 60px; padding:6px 0 6px 0; }
 
+#p_thumbnail{ width:60px;}
+
+#product_list img{ width:60px; height: 60px; }
+
+#page-wrap{
+	width: 100%;
+	height:30px;
+	margin:0 auto;
+}
 
 .page-num {
-  width:280px;
+  width: 200px;
+  height:30px;
   margin: 0 auto;
   margin-top: 15px;
 }
@@ -27,6 +37,7 @@ h1 {
 .page-num li {
   width: 36px;
   height: 35px;
+  margin:0 auto;
   padding-top: 0;
   float: left;
 

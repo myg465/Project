@@ -5,20 +5,18 @@ h1 {
   text-align: center;
 }
 
-#event_list {
+#member_list_wrap {
   width: 90%;
-  height: 2380px;
   margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 10px;
-  padding-left:170px;
+  padding: 20px 0 20px 0;
   box-sizing:border-box;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }
 
 #member_list{
-	width: 100%;
+	width: 90%;
+	margin:0 auto;
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 11.5px;
@@ -40,6 +38,8 @@ h1 {
 	height: 35px;
 	font-size: 1.2em;
 }
+
+#member_list a{ color:blue; font-weight: bold;}
 
 #member_list tr:nth-of-type(2n){
 	background: #eff3f9;

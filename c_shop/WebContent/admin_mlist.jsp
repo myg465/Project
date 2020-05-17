@@ -14,7 +14,7 @@
 		<section>
 		    <h1>회원관리</h1>
 		
-		    <article id="event_list">
+		    <article id="member_list_wrap">
 		      <table border="1" id="member_list">
 				    <tr>
 						<th>회원 아이디</th>

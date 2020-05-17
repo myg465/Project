@@ -3,62 +3,91 @@ section {
   text-align: center ;
 }
 
-h1 {
-  margin-top: 40px;
-  margin-bottom: 50px;
-  font-size: 40px;
-}
+/** 전체 div **/
+#whole_content_wrap{width: 1216px; height: 100%; padding: 70px 0 140px; margin: 0 auto;}
 
-#product_list {
-  width: 80%;
-  height: 680px;
-  margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 10px;
-  padding-left:170px;
-  box-sizing:border-box;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-}
+#top_menu{width: 1180px; height: 127px; }
 
-#product_list > ul {
-  text-align: center;
-  width: 100%;
-  height: 680px;
-}
+#top_menu h2{font-size: 40px; line-height: 56px; font-weight: bold; color: #101010; 
+	border-bottom: 1px solid #e0e0e0;}
 
-#product_list > ul > li {
-  float:left;
-  width: 17%;
-  margin-right: 30px;
-  margin-bottom: 40px;
-  text-align: left;
-}
+/** 컨텐츠 상단**/
+#content_top{display:inline-block; width:1180px; height:200px; }
 
+#list_notice{width: 500px;height: 121px; padding-top: 48px; position: relative;}
 
-.price {
-  background-color: #f18a76;
-  color: white;
-  font-size: 15px;
-  width: 80px;
-  text-align: center;
-  margin: 5px;
-}
+#list_notice h2{font-size: 24px; line-height: 42px; font-weight: bold; color: #101010; letter-spacing: -2px;}
 
-.product_name {
-  font-size: 18px;
-  font-weight: bold;
-}
+#list_notice p{font-size: 16px; font-weight: bold; line-height: 27px; padding-top: 4px; letter-spacing: -2px;}
 
-.regdate {
-  font-size: 14px;
-}
+/**메뉴 정렬**/
+#list_sort {float:right; width: 430px; position: relative; top:-40px;}
 
-.pdetail {
-	font-size: 10px; 
-	color:#101010;
+#list_sort ul{ list-style-type: none; }
+
+#list_sort ul li{float:left; font-size: 14px; font-weight: bold; line-height: 24px; margin-left:2px; }
+
+#list_sort ul li input {display: none;}
+
+#list_sort ul li label:active {transition: all 1s; border-bottom: 1px solid black;}
+
+/** 제품 리스트**/
+#product_list{width: 1216px; height: auto; }
+
+#product_list ul{list-style-type:none; width:100%; height:auto;  margin-top: -80px; margin-left:-36px;
+ padding-left: 0px;}
+ 
+#product_list ul li{float:left; width: 268px; height: 568px; margin-top: 80px; margin-left: 34px; }
+
+#item_image{width:268px; height:320px; }
+
+section>.item_text_wrap{width: 268px; height: 144px; padding-top: 16px; }
+
+.item_flag{width: 267px; height: 20px; padding-bottom: 12px;}
+
+.item_flag span{display:block; width: 48px; height: 18px; background-color: #BDD61A; line-height:15px;
+	font-size: 10px; font-weight:bold; text-align: center;}
+				
+.item_info{height: 28px; padding-top: 8px;}
+
+.item_first{display: inline-block; font-size: 13px; line-height: 20px; color: #606060; font-weight: bold;}
+
+.item_rest{display: inline-block; font-size: 13px; line-height: 20px; color: #606060; font-weight: bold;}
+
+.item_name span{font-size: 17px; color: #101010; font-weight:bold; line-height: 24px;}
+
+.item_price{padding-top: 8px;}
+
+.price_name{margin-right: 5px; color: #EE0700; font-size: 18px; line-height: 27px; font-weight: bold;}
+
+.price{font-size: 18px; color: #101010; line-height: 27px; font-weight: bold;}
+
+.price_hide{padding-left: 6px; color: #606060; font-size: 13px; font-weight:bold; line-height: 21px; 
+	text-decoration: line-through;}
+
+/**별점**/
+#item_review{margin-top: 8px; }
+.star{display:inline-block; width: 88px; height: 16px; background: url('../img/ico_set2.png') -373px -27px no-repeat;
+	background-size: 800px 800px; }
+	 
+.rating_star1{display:block; width: 94%; height: 16px; position: relative;
+	background: url('../img/ico_set2.png') -373px -1px no-repeat; background-size: 800px 800px;}
+			
+.reviw_num{font-size: 14px; position: relative; top:-5px;}
+
+/** 좋아요, 카트**/
+#item_buttons{height: 40px;margin-top: 24px;}
+
+#item_buttons button{border: none; cursor: pointer;}
+
+.btn_interest{width: 40px; height: 40px; background: url('../img/ico_set.png') -0px -190px no-repeat;
+	background-size: 800px 800px;}
 	
-}
+.btn_cart{margin-left:10px; width: 40px; height: 40px; background: url('../img/ico_set.png') -45px -190px no-repeat;
+	background-size: 800px 800px;}
+
+
+#page-wrap{ width:100%; height: 40px;}
 
 .page-num {
   width:280px;
