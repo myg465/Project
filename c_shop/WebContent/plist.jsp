@@ -53,8 +53,8 @@
 				<ul>
 					<c:forEach var="plist" items="${list }">
 						<li>
-							<a href=""> 
-								<img alt="${plist.pName }" src="pupload/${plist.pTitleimg }" id="item_image">
+							<a href="pcontent_view.do?pId=${plist.pId }&rnum=${plist.rnum}&page="> 
+								<img alt="${plist.pName }" src="pupload/${plist.pContentimg1 }" id="item_image">
 								<div class="item_text_wrap">
 									<div class="item_flag">
 										<span>NEW</span>

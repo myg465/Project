@@ -3,15 +3,15 @@ section {
   text-align: center ;
 }
 
-/** ÀüÃ¼ div **/
-#whole_content_wrap{width: 1216px; height: 100%; padding: 70px 0 140px; margin: 0 auto;}
+/** ï¿½ï¿½Ã¼ div **/
+#whole_content_wrap{width: 1216px; height: 2050px; padding: 70px 0 140px; margin: 0 auto;}
 
 #top_menu{width: 1180px; height: 127px; }
 
 #top_menu h2{font-size: 40px; line-height: 56px; font-weight: bold; color: #101010; 
 	border-bottom: 1px solid #e0e0e0;}
 
-/** ÄÁÅÙÃ÷ »ó´Ü**/
+/** ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½**/
 #content_top{display:inline-block; width:1180px; height:200px; }
 
 #list_notice{width: 500px;height: 121px; padding-top: 48px; position: relative;}
@@ -20,7 +20,7 @@ section {
 
 #list_notice p{font-size: 16px; font-weight: bold; line-height: 27px; padding-top: 4px; letter-spacing: -2px;}
 
-/**¸Þ´º Á¤·Ä**/
+/**ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½**/
 #list_sort {float:right; width: 430px; position: relative; top:-40px;}
 
 #list_sort ul{ list-style-type: none; }
@@ -31,10 +31,10 @@ section {
 
 #list_sort ul li label:active {transition: all 1s; border-bottom: 1px solid black;}
 
-/** Á¦Ç° ¸®½ºÆ®**/
+/** ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½Æ®**/
 #product_list{width: 1216px; height: auto; }
 
-#product_list ul{list-style-type:none; width:100%; height:auto;  margin-top: -80px; margin-left:-36px;
+#product_list ul{list-style-type:none; width:100%; height:2050px;  margin-top: -80px; margin-left:-36px;
  padding-left: 0px;}
  
 #product_list ul li{float:left; width: 268px; height: 568px; margin-top: 80px; margin-left: 34px; }
@@ -65,7 +65,7 @@ section>.item_text_wrap{width: 268px; height: 144px; padding-top: 16px; }
 .price_hide{padding-left: 6px; color: #606060; font-size: 13px; font-weight:bold; line-height: 21px; 
 	text-decoration: line-through;}
 
-/**º°Á¡**/
+/**ï¿½ï¿½ï¿½ï¿½**/
 #item_review{margin-top: 8px; }
 .star{display:inline-block; width: 88px; height: 16px; background: url('../img/ico_set2.png') -373px -27px no-repeat;
 	background-size: 800px 800px; }
@@ -75,7 +75,7 @@ section>.item_text_wrap{width: 268px; height: 144px; padding-top: 16px; }
 			
 .reviw_num{font-size: 14px; position: relative; top:-5px;}
 
-/** ÁÁ¾Æ¿ä, Ä«Æ®**/
+/** ï¿½ï¿½ï¿½Æ¿ï¿½, Ä«Æ®**/
 #item_buttons{height: 40px;margin-top: 24px;}
 
 #item_buttons button{border: none; cursor: pointer;}
