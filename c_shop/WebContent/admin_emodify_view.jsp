@@ -33,7 +33,8 @@
 	      <table>
 	        <colgroup>
 	          <col width="15%">
-	          <col width="85%">
+	          <col width="50%">
+	          <col width="35%">
 	        </colgroup>
 	        <tr>
 	          <th>제목 ${rnum }</th>
@@ -56,6 +57,7 @@
 	            <label for="newfile1">파일 선택</label>
 	            <input type="file" name="eTitleimg" id="newfile1" class="oldfile">
 	            <input type="text" name="newfile1" id="file1" value="${econtent_view.eTitleimg }" readonly >
+	          	<img alt="" src="upload/${econtent_view.eTitleimg }" class="oldimg">
 	          </td>
 	        </tr>
 	        <tr>
@@ -64,6 +66,7 @@
 	          	<label for="newfile2">파일 선택</label>
 	            <input type="file" name="eContentimg" id="newfile2" class="oldfile">
 	            <input type="text" name="newfile2" id="file2" value="${econtent_view.eContentimg }" readonly>
+	          	<img alt="" src="upload/${econtent_view.eContentimg }" class="oldimg">
 	          </td>
 	        </tr>
 	        
