@@ -1,0 +1,15 @@
+ajax
+@restcontroller
+
+jsp로 리턴하지 않고 데이터로 리턴한다.
+
+@responsebody
+
+@getmapping위에 붙임( 특정 메소드만 ajax통신을 한다.)
+
+hashmap로 넘겨준다.
+
+페이지를 바꾸지 않고 결과를 사용할수 있다.
+(자바스크립트 등..)
+
+ajax로 값을 넘기고 다시 받아오기
