@@ -1,0 +1,44 @@
+-- 작업 예정 --
+
+1. 비회원 장바구니 완성하기 - 총액계산, 결제로 넘기기
+
+2. 관리자 리뷰관리 마무리( 정렬, 검색, 삭제 )
+
+
+
+
+
+
+--공공데이타 활용--
+
+ssl 인증서
+https를 사용 
+보안을 강화 시켜줌(유료)
+
+0528_01 사용 
+-- ajax --
+
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-core</artifactId>
+	<version>2.9.5</version>
+</dependency>
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-databind</artifactId>
+	<version>2.9.5</version>
+</dependency>
+--parser--
+<dependency>
+	<groupId>com.googlecode.json-simple</groupId>
+	<artifactId>json-simple</artifactId>
+	<version>1.1.1</version>
+</dependency>
+
+중괄호 - 객체 / 대괄호 - 배열(키가 똑같고 벨류는 다른 것)
+
+중괄호 안에 있으면 jsonobject로 찾아 들어가고, 바로 있으면 parse
+배열은 jsonarray로 얻어야함
+
+키 : 객체 / 키: 배열 
+
