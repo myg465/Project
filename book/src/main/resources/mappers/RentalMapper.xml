@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="RentalDao">
+
+	<select id="rentalList" resultType="com.book.rental.dto.RentalDto">
+		SELECT r.rentalid,r.rentalname,r.rentalphone,r.rentaldate,
+		r.returnexpdate,nvl(r.returndate,TO_DATE ('00-01-01')) returndate,b.bookname,b.filename 
+		  FROM rentalList r, bookList b
+		  where r.rentalbook=b.bookid
+	</select>
+
+</mapper>
