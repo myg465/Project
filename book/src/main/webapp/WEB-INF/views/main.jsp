@@ -37,8 +37,8 @@
 		<section>
 			<h1>도서관리 시스템 메인</h1>
 			<div id="main_list">
-				<h2>ㅇㅇㅇㅇㅇㅇ</h2>
-				<div class="list_count">ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ</div>
+				<h2>test</h2>
+				<div class="list_count">testtesttesttesttest</div>
 				<div>
 					<table border="1">
 						<tr>
@@ -54,16 +54,16 @@
 							<th>SMS 수신여부</th>
 						</tr>
 							<tr>
-								<td>A</td>
-								<td>A</td>
-								<td>A</td>
-								<td>A</td>
-								<td>A</td>
-								<td>A</td>
-								<td>A</td>
-								<td>A</td>
-								<td>A</td>
-								<td>A</td>
+								<td>test</td>
+								<td>test</td>
+								<td>test</td>
+								<td>test</td>
+								<td>test</td>
+								<td>test</td>
+								<td>test</td>
+								<td>test</td>
+								<td>test</td>
+								<td>test</td>
 							</tr>
 					    </table>
 				</div>

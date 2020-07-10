@@ -10,5 +10,27 @@
 		 FROM bookList
 		 ORDER BY bookid desc
 	</select>
+	<insert id="bookWrite">
+		INSERT INTO bookList VALUES(book_seq.nextval,#{bookName},#{bookDesc},#{author},#{filename},sysdate,#{category})
+	</insert>
+	<select id="bookModifyView" resultType="com.book.rental.dto.BookDto">
+		SELECT *
+		  FROM bookList
+		  WHERE bookId=#{param1}
+	</select>
+	<update id="bookModify">
+		UPDATE bookList
+		  SET bookName=#{bookName},bookDesc=#{bookDesc},author=#{author},filename=#{filename},category=#{category}
+		  WHERE bookId=#{bookId}
+	</update>
+	<select id="deletefile" resultType="String">
+		SELECT filename
+		  FROM bookList
+		  WHERE bookId=#{param1}
+	</select>
+	<delete id="bookDelete">
+		DELETE FROM bookList
+		  where bookId=#{param1}
+	</delete>
 
 </mapper>

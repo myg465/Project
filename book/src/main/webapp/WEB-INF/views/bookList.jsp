@@ -8,8 +8,32 @@
 <meta charset="UTF-8">
 <title>보유 도서 목록</title>
 <link rel="stylesheet" type="text/css" href="css/header.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	function bookDelete(bookId){
+		if(confirm('정말로 삭제하시겠습니까?')){
+			$.ajax({
+		        url : "bookDelete",
+		        type : "POST",
+		        data: JSON.stringify({bookId:bookId}),
+		        contentType: "application/json",
+		        success : function(data){
+		           if(data.result == "ok"){
+		        	 alert('삭제가 완료되었습니다.');
+		        	 $("#"+bookId).hide();
+		           }
+		        },
+		        error : function(){
+		           alert("통신 중 오류가 발생하였습니다. 잠시 후 다시 시도해주세요.\n오류가 반복될 경우, 고객센터로 문의 부탁드립니다.\n(error_code: deleteError)");
+		        }
+		     });
+		}
+	}
+
+</script>
 </head>
 <body>
+
 	<header>
 		<ul>
 			<li class="menu_btn"><a href="main">메인</a></li>
@@ -49,7 +73,7 @@
 			</tr>
 			<c:forEach var="list" items="${bookList }">
 			<fmt:formatDate value="${list.regDate}" pattern="yyyy-MM-dd" var="regDate" />
-				<tr>
+				<tr id="${list.bookId }">
 					<td>${list.bookId }</td>
 					<td>${list.category }</td>
 					<td>${list.bookName }</td>
@@ -58,11 +82,11 @@
 					<td><img alt="" src="files/${list.filename }" width="80px" height="100px"></td>
 					<td>${regDate }</td>
 					<td>
-						<a href='#'>
+						<a href='bookModify?bookId=${list.bookId }'>
 							<button>수정</button>
 						</a>
 						<br>
-						<a href='#'>
+						<a onclick='bookDelete(<c:out value='${list.bookId}'/>)'>
 							<button>삭제</button>
 						</a>
 					</td>
