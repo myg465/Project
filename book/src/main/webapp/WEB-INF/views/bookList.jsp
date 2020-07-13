@@ -34,20 +34,7 @@
 </head>
 <body>
 
-	<header>
-		<ul>
-			<li class="menu_btn"><a href="main">메인</a></li>
-			<li class="menu_btn"><a href="bookList">도서관리</a></li>
-			<li class="menu_btn"><a href="rentalList">대출관리</a></li>
-			<li>
-				<div id="info">
-					<span><strong>${name }</strong>님</span>
-					<a href="logout" onclick="return confirm('로그아웃 하시겠습니까?')"><button>로그아웃</button></a>
-				</div>
-			</li>
-		</ul>
-		
-	</header>
+	<jsp:include page="./header.jsp" />
 	<section>
 		<h2>보유 도서 현황</h2>
 		<table border="1" class="bookTable">

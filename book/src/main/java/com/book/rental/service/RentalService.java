@@ -10,4 +10,6 @@ public interface RentalService {
 
 	void rentalList(Model model);
 
+	String returnReg(HashMap<String, String> reqMap);
+
 }

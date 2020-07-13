@@ -27,6 +27,13 @@ public class RentalServiceImpl implements RentalService{
 		
 	}
 
+	@Override
+	public String returnReg(HashMap<String, String> reqMap) {
+		
+		String rentalId=reqMap.get("rentalId");
+		return rentalDao.returnReg(rentalId);
+	}
+
 	
 	
 	

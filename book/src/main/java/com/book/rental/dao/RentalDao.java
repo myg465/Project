@@ -8,4 +8,6 @@ public interface RentalDao {
 
 	void rentalList(Model model);
 
+	String returnReg(String rentalId);
+
 }

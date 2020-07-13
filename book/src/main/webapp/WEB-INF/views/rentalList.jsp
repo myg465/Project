@@ -8,22 +8,11 @@
 <meta charset="UTF-8">
 <title>도서 대여 목록</title>
 <link rel="stylesheet" type="text/css" href="css/header.css">
+<script type="text/javascript" src="js/rental_custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<header>
-		<ul>
-			<li class="menu_btn"><a href="main">메인</a></li>
-			<li class="menu_btn"><a href="bookList">도서관리</a></li>
-			<li class="menu_btn"><a href="rentalList">대출관리</a></li>
-			<li>
-				<div id="info">
-					<span><strong>${name }</strong>님</span>
-					<a href="logout" onclick="return confirm('로그아웃 하시겠습니까?')"><button>로그아웃</button></a>
-				</div>
-			</li>
-		</ul>
-		
-	</header>
+	<jsp:include page="./header.jsp" />
 	<section>
 		<h2>도서 대여 현황</h2>
 		<table border="1" class="bookTable">
@@ -77,11 +66,11 @@
 					<td>${list.bookName }</td>
 					<td><img alt="" src="files/${list.filename }" width="80px" height="100px"></td>
 					<td>
-						<c:if test="${nowDate>returnExpDate }">
+						<c:if test="${nowDate>returnExpDate || returnDate!='2000-01-01'}">
 							√
 						</c:if> 
 					</td>
-					<td><a href='#'><button>반납</button></a></td>
+					<td><a onclick='returnReg(${list.rentalId})'><button>반납</button></a></td>
 				</tr>
 			</c:forEach>
 			
@@ -89,7 +78,7 @@
 		</table>
 		<div class="bottom_btn">
 			<a href="rentalWrite"><button>대여등록</button></a>
-			<a href="rentalWrite"><button>연체자 검색</button></a>
+			<a href="delay"><button>연체자 검색</button></a>
 		</div>
 	</section>
 </body>

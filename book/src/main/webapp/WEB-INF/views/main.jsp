@@ -12,28 +12,7 @@
 		
 	</head>
 	<body>
-	<c:if test="${authId==null }">
-		<script type="text/javascript">
-			alert('로그인을 하지 않으셨습니다. 로그인 화면으로 이동합니다.');
-			window.location.href='login';
-		</script>
-	</c:if>
-		<header>
-			<ul>
-				<li class="menu_btn"><a href="main">메인</a></li>
-				<li class="menu_btn"><a href="bookList">도서관리</a></li>
-				<li class="menu_btn"><a href="rentalList">대출관리</a></li>
-				<li>
-					<div id="info">
-						<span><strong>${name }</strong>님</span>
-						<a href="logout" onclick="return confirm('로그아웃 하시겠습니까?')"><button>로그아웃</button></a>
-					</div>
-				</li>
-			</ul>
-			
-		</header>
-		
-		
+		<jsp:include page="./header.jsp" />		
 		<section>
 			<h1>도서관리 시스템 메인</h1>
 			<div id="main_list">

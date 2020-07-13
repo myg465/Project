@@ -82,8 +82,10 @@ public class BookServiceImpl implements BookService{
 		modifyMap.put("bookDesc", request.getParameter("bookDesc"));
 		String orifile=request.getParameter("orifile");
 		MultipartFile file=request.getFile("filename");
-		if(file==null) {
+		if(file==null || file.getOriginalFilename().equals("")) {
 			modifyMap.put("filename", orifile);
+			bookDao.bookModify(modifyMap, model);
+			return;
 		}
 		else {
 			File f=new File(path+"\\"+orifile);

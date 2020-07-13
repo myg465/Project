@@ -11,5 +11,11 @@
 		  FROM rentalList r, bookList b
 		  where r.rentalbook=b.bookid
 	</select>
+	
+	<update id="returnReg">
+		UPDATE rentalList
+		  SET returnDate=sysdate
+		  WHERE rentalId=#{rentalId}
+	</update>
 
 </mapper>
